@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emberlo Support</title>
+<style>
+:root { --bg: #fbf7f2; --text: #2b211b; --muted: #75655a; --ember: #c2410c; --rule: #eaded2; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #17120f; --text: #f1e9e1; --muted: #b3a294; --ember: #fb923c; --rule: #3a2e26; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+header a { color: var(--text); text-decoration: none; font-weight: 600; }
+.flame { color: var(--ember); font-size: 22px; }
+nav { margin-left: auto; display: flex; gap: 16px; font-size: 15px; }
+nav a { color: var(--muted); font-weight: 500; }
+nav a[aria-current] { color: var(--ember); }
+h1 { font-size: 32px; line-height: 1.2; margin: 24px 0 8px; }
+h2 { font-size: 20px; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--rule); }
+h3 { font-size: 17px; margin: 24px 0 4px; }
+p, li { overflow-wrap: anywhere; }
+p { margin: 0 0 12px; }
+ul, ol { padding-left: 22px; margin: 0 0 12px; }
+.meta { color: var(--muted); font-size: 15px; }
+a { color: var(--ember); }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<header><span class="flame" aria-hidden="true">&#x1F525;&#xFE0E;</span><a href="../">Emberlo</a><nav><a href="../support/" aria-current="page">Support</a><a href="../privacy/">Privacy Policy</a></nav></header>
+<h1>Emberlo Support</h1>
+<p>Emberlo plays music and audiobooks from your Plex, Jellyfin, Emby and Audiobookshelf servers, and from files on your iPhone or iPad.</p>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:support@firekeep.ai">support@firekeep.ai</a></p>
+<p>Please include your iPhone or iPad model, your iOS version, the Emberlo version (Settings), and the kind of server you use (Plex, Jellyfin, Emby or Audiobookshelf).</p>
+<h2>Getting started</h2>
+<ol>
+<li>Open Emberlo. Go to Settings (the gear icon on Home) &gt; Sources &gt; Add Server.</li>
+<li>Pick your server type and enter its address and your sign-in. For Plex, Emberlo opens the Plex sign-in page and lets you choose your servers and Plex Home profile.</li>
+<li>Your libraries appear in the Library tab: Albums, Artists, Books and Authors. You can also import files from the Files app under Settings &gt; Sources.</li>
+</ol>
+<p>Emberlo is free with up to two servers, plus Files. Emberlo Premium is a one-time purchase that adds unlimited servers, best copy wins, smart download rules, Sleep Rewind, listening stats, and, on iPhones and iPads that support Apple Intelligence, Story so far and Who&#x27;s this? for books in English. Family Sharing is on. To restore a purchase, go to Settings &gt; Premium &gt; Restore Purchase.</p>
+<h2>Common questions</h2>
+<h3>Emberlo can&#x27;t connect to my server.</h3>
+<p>Check the address, including the port, for example http://192.168.1.20:8096. On your home network, allow Emberlo under Settings &gt; Privacy &amp; Security &gt; Local Network in the iOS Settings app. Check that the server is running, and that you can open its web page from Safari on the same device. For a server outside your home, use its HTTPS address.</p>
+<h3>What does the Signal Path strip mean?</h3>
+<p>It shows each stage between the file and your ears. Green means untouched. Amber means changed but not lossy, for example resampled. Red means a lossy step, for example Bluetooth. The verdict line says Bit-perfect only when Emberlo can confirm every stage, which needs a USB audio device. Tap the strip for a plain-language reason and a fix. If Emberlo can&#x27;t tell, it shows unknown.</p>
+<h3>Why isn&#x27;t my album art showing?</h3>
+<p>Emberlo uses the art your server provides. If an album has none and &quot;Find missing artwork online&quot; is on in Settings, Emberlo looks one up from MusicBrainz and the Cover Art Archive. You can also choose Replace Cover on an album.</p>
+<h3>Where are Story so far and Who&#x27;s this?</h3>
+<p>They need Premium, an iPhone or iPad with Apple Intelligence turned on, and a book in English. Turn them on in Settings, then listen for a while; they use only what you have heard, on your iPhone or iPad. Nothing is sent anywhere. If they do not appear, your iPhone or iPad may not support them. Delete the text any time with Settings &gt; Delete transcripts.</p>
+<h3>How does Sleep Rewind work?</h3>
+<p>Turn it on in Settings (Premium). Emberlo asks to read your sleep analysis from the Health app, read only. If a book kept playing after you fell asleep, it offers to take you back to that point the next morning. Your sleep data stays on your iPhone or iPad.</p>
+<h3>How do I stop Emberlo syncing with iCloud?</h3>
+<p>Settings &gt; Sync with iCloud. Turning it off stops sync. Data already in your iCloud stays there until you remove it in iOS Settings &gt; your name &gt; iCloud &gt; Manage Storage.</p>
+<h3>How do I delete my data?</h3>
+<p>Settings &gt; Delete transcripts removes the text made by Story so far and Who&#x27;s this?. Sign-in tokens are kept in the iOS Keychain, which can outlive the app, so before you delete Emberlo, remove each server in Settings &gt; Sources and tap Sign Out of Plex there: that deletes their tokens. Deleting Emberlo then removes its files from your device, including your server addresses. A few Keychain items stay, because nothing in the app removes them: the random identifiers Emberlo gives Plex, Jellyfin and Emby so they can list it as a device, and a note of whether Premium was bought on this device. They hold no sign-in, name or account details, and Emberlo uses them again if you reinstall it.</p>
+<h2>Privacy</h2>
+<p>Emberlo has no account, no analytics and no tracking. Read the privacy policy at <a href="https://kapella-hub.github.io/emberlo-site/privacy/">https://kapella-hub.github.io/emberlo-site/privacy/</a>.</p>
+<footer>&copy; 2026 Marat Oganesyan</footer>
+</main>
+</body>
+</html>

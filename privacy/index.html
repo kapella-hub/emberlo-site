@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emberlo Privacy Policy</title>
+<style>
+:root { --bg: #fbf7f2; --text: #2b211b; --muted: #75655a; --ember: #c2410c; --rule: #eaded2; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #17120f; --text: #f1e9e1; --muted: #b3a294; --ember: #fb923c; --rule: #3a2e26; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+header a { color: var(--text); text-decoration: none; font-weight: 600; }
+.flame { color: var(--ember); font-size: 22px; }
+nav { margin-left: auto; display: flex; gap: 16px; font-size: 15px; }
+nav a { color: var(--muted); font-weight: 500; }
+nav a[aria-current] { color: var(--ember); }
+h1 { font-size: 32px; line-height: 1.2; margin: 24px 0 8px; }
+h2 { font-size: 20px; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--rule); }
+h3 { font-size: 17px; margin: 24px 0 4px; }
+p, li { overflow-wrap: anywhere; }
+p { margin: 0 0 12px; }
+ul, ol { padding-left: 22px; margin: 0 0 12px; }
+.meta { color: var(--muted); font-size: 15px; }
+a { color: var(--ember); }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<header><span class="flame" aria-hidden="true">&#x1F525;&#xFE0E;</span><a href="../">Emberlo</a><nav><a href="../support/">Support</a><a href="../privacy/" aria-current="page">Privacy Policy</a></nav></header>
+<h1>Emberlo Privacy Policy</h1>
+<p class="meta">Last updated: 31 October 2026</p>
+<p>Emberlo is an app for iPhone and iPad that plays music and audiobooks from your own media servers and from files on your device. It is published by Marat Oganesyan (&quot;we&quot;, &quot;us&quot;). This policy says what Emberlo does with your data. The short version: we do not collect it.</p>
+<h2>The short version</h2>
+<ul>
+<li>Emberlo has no account and no server of ours. We do not receive your data.</li>
+<li>There are no ads, no analytics, no tracking and no third-party SDKs in the app.</li>
+<li>Everything Emberlo needs to remember is kept on your device, in your own iCloud, or in your device&#x27;s Keychain.</li>
+<li>The only thing Emberlo sends to a third party on its own is the album and artist name of an album that has no cover, to look up a cover. You can turn that off.</li>
+</ul>
+<h2>What stays on your device</h2>
+<ul>
+<li>Your server addresses, stored in a file on your device, and your sign-in tokens, stored in the iOS Keychain.</li>
+<li>Your settings, playback positions, downloads, bookmarks, favourites and listening statistics.</li>
+<li>Story so far and Who&#x27;s this? (Premium, on iPhones and iPads that support Apple Intelligence, for books in English): Emberlo turns the audio you listen to into text on your device, using Apple&#x27;s on-device speech recognition. It builds recaps and answers using Apple&#x27;s on-device language model. The text is stored on your device, is excluded from device backups, and is never sent anywhere. You can delete it at any time in Settings with &quot;Delete transcripts&quot;. Your device&#x27;s system may download a speech language pack from Apple to do this; Emberlo sends nothing in that process. To fill gaps in a book, Emberlo can also fetch audio of your current book from your own server while your device is charging on Wi-Fi. The audio is discarded after it is turned into text.</li>
+<li>Sleep Rewind (Premium): if you turn it on and allow it, Emberlo reads your sleep analysis from the Health app to find when you fell asleep and offer to take your book back to that point. Emberlo only reads this data. It never writes to Health, and the data stays on your device. It is not synced and is not sent to us or anyone else. You can turn it off in Settings, and you can withdraw access in the Health app.</li>
+</ul>
+<h2>Your own media servers</h2>
+<p>When you add a Plex, Jellyfin, Emby or Audiobookshelf server, Emberlo talks to it directly to browse and play your library, and to report your playback position. You choose the servers. What those servers and services do with your data is covered by their own operators&#x27; policies.</p>
+<ul>
+<li>Plex: sign-in goes through plex.tv, Plex&#x27;s service.</li>
+<li>Emberlo identifies itself to these services so they can list it as a device. For Plex it sends a random identifier created when you first use Emberlo and kept in your Keychain, plus your device&#x27;s name as iOS reports it, the app name, the app version and the platform. Jellyfin and Emby receive a similar random identifier, device name and version. We do not see any of this.</li>
+<li>Many home servers use plain HTTP on your local network. Traffic to such a server is not encrypted. Emberlo allows this because many home servers cannot use HTTPS. Use HTTPS where you can.</li>
+</ul>
+<h2>Deleting your data</h2>
+<p>Settings &gt; Delete transcripts deletes the text made by Story so far and Who&#x27;s this?. Removing a server in Settings &gt; Sources deletes its sign-in tokens from the Keychain, and Sign Out of Plex deletes your Plex sign-in. Deleting Emberlo deletes its files from your device, including your server addresses, but iOS can keep Keychain items after an app is deleted: remove your servers and sign out of Plex first. The random identifiers Emberlo gives Plex, Jellyfin and Emby, and a note of whether Premium was bought on this device, stay in the Keychain; they hold no sign-in, name or account details. Data in your iCloud stays there until you remove it (see below).</p>
+<h2>iCloud sync</h2>
+<p>Emberlo can sync some of its own state between your devices through your private iCloud (the CloudKit private database for Emberlo). It is on by default and you can switch it off in Settings &gt; Sync with iCloud. What is synced: your playback position, speed and finished status for each book; your bookmarks and bookmark notes; your favourites; and your recently played items (their titles, subtitles and cover references). Server addresses, sign-in tokens, listening statistics, transcripts and Health data are not synced. This data is stored in your iCloud account. We cannot read it, and it is governed by Apple&#x27;s terms for iCloud.</p>
+<h2>Looking up missing cover art</h2>
+<p>If an album has no cover and &quot;Find missing artwork online&quot; is on (it is on by default; turn it off in Settings), Emberlo asks two public services for one: MusicBrainz (musicbrainz.org) and the Cover Art Archive (coverartarchive.org, which may pass the request on to archive.org). The request contains the album title and artist name, or a MusicBrainz release identifier taken from your file&#x27;s tags. As with any internet request, those services also see your IP address. Emberlo identifies itself to MusicBrainz in the User-Agent with the app name, its version and a link to our support page, as MusicBrainz requires. It sends no sign-in token, no account details and no cookies, and it does not store the replies in a web cache. We do not receive any of this. These services have their own privacy policies.</p>
+<p>If you use Replace Cover and type a web address, Emberlo fetches that one https address, once, with no cookies or sign-in details. If you pick a photo, the system photo picker gives Emberlo only the photo you choose.</p>
+<h2>Purchases</h2>
+<p>Emberlo Premium is a one-time purchase handled by Apple through the App Store. Apple processes the payment. We do not receive your payment details or your purchase history, and Emberlo checks your entitlement with Apple on your device. With Family Sharing on, your family members can use Premium too.</p>
+<h2>Permissions Emberlo may ask for</h2>
+<ul>
+<li>Local Network: to connect to your media server on your home network.</li>
+<li>Health (sleep analysis, read only): for Sleep Rewind.</li>
+<li>Speech Recognition: to turn what you hear in a book into text on your device, for Story so far and Who&#x27;s this?.</li>
+<li>iCloud: for the optional sync above.</li>
+</ul>
+<h2>What we do not do</h2>
+<p>We do not collect your personal information. We do not track you across other companies&#x27; apps and websites. We do not sell or share your data. We do not use analytics or advertising tools. If you choose to share crash reports with developers in iOS settings, Apple may send us anonymous reports; we do not receive anything otherwise.</p>
+<h2>Children</h2>
+<p>Emberlo does not collect personal information from anyone, including children.</p>
+<h2>Changes</h2>
+<p>If this policy changes, we will update the date above and describe the change in the app&#x27;s release notes.</p>
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:support@firekeep.ai">support@firekeep.ai</a>, or the support page at <a href="https://kapella-hub.github.io/emberlo-site/support/">https://kapella-hub.github.io/emberlo-site/support/</a>.</p>
+<footer>&copy; 2026 Marat Oganesyan</footer>
+</main>
+</body>
+</html>
